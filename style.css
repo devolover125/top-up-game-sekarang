@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    line-height: 1.6;
+
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header{
+    background-color: brown;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+.hero{
+    background:url(https://tse3.mm.bing.net/th?id=OIP.rL5R8Lw5Fp-m7JbbZx-q2AHaEK&pid=Api&P=0&h=220) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.games{
+    margin: 50px 0;
+    background-color: rgb(248, 62, 5);
+}
+
+.games h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.game-item{
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(14, 13, 13);
+}
+
+
+.game-item img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.game-item img:hover{
+    background-color: #030303;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.game-item .btn{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease,transform 0.3s,box shadow 0.3s ease;
+}
+.game-item .btn:hover{
+    background-color: #7c5e5e;
+    transform: scale(1.1);
+    box-shadow:  0 4px 8px rgba(0,0.0, 0.2);
+}
+
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20opx ;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px){
+.hero{
+    padding: 60px 0;
+}
+.hero h2{
+    font-size: 28px;
+}
+.hero p{
+    font-size: 16px;
+}
+.game-list{
+    flex-direction: column;
+    align-items: center;
+}
+.game-item{
+    width: 80%;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 480px){
+    .hero h2{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .hero .btn{
+  padding-inline-start: 8px 16px;
+    }
+    .game-item{
+        width: 100%;
+        padding: 15px;
+    }
+}
